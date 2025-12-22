@@ -749,6 +749,7 @@
 
                 document.getElementById('waterSlider').addEventListener('input', (e) => {
                     this.waterLevel = parseFloat(e.target.value);
+                    this.updateStats();
                 });
 
                 document.getElementById('clearBtn').addEventListener('click', () => {
